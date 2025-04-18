@@ -13,6 +13,7 @@ const announcementRoutes = require('./routes/announcementRoutes');
 const feedbackRoutes = require('./routes/feedbackRoutes');
 const serviceRoutes = require('./routes/serviceRoutes');
 const ruleRoutes = require('./routes/ruleRoutes');
+const logRoutes = require('./routes/logRoutes');
 
 const app = express();
 
@@ -30,5 +31,6 @@ app.use('/api/announcements', announcementRoutes);
 app.use('/api/feedbacks', feedbackRoutes);
 app.use('/api/services', serviceRoutes);
 app.use('/api/rules', ruleRoutes);
+app.use('/api/logs', logRoutes);
 
 module.exports = app; 
